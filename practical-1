@@ -1,0 +1,37 @@
+using System;
+using System.Threading;
+namespace P1
+{
+    class P1
+    {
+        static int j = 90;
+        public enum TimeOfDay
+        {
+            Morning = 0,
+            Afternoon = 1,
+            Evening = 2
+        }
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("First Program");
+             WriteGreeting(TimeOfDay.Morning);
+            Console.WriteLine("Argument is: {0}",args[1]);
+        }
+        static void WriteGreeting(TimeOfDay timeOfDay)
+        {
+            switch (timeOfDay)
+            {
+                case TimeOfDay.Morning:
+                    Console.WriteLine("Good morning!");
+                    break;
+                case TimeOfDay.Afternoon:
+                    Console.WriteLine("Good afternoon!");
+                    break;
+                case TimeOfDay.Evening:
+                    Console.WriteLine("Good evening!");
+                    break;
+                default:
+                    Console.WriteLine("Hello!");
+                    break;
+            }
+        }
