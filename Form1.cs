@@ -36,7 +36,7 @@ namespace StudentForm
             if (ck2.Checked == true) {
                 subject = subject + " s2";
             }
-            string source = @"Data Source=Mishil-Patel\SQLExpress;Initial Catalog=DemoDb;Integrated Security=True;Pooling=False";
+            string source = @"Data Source=Anjali\SQLExpress;Initial Catalog=DemoDb;Integrated Security=True;Pooling=False";
             string insert = "insert into tblstudent (fname,lname,gender,subject,imgStudent) values ('" + txtfname.Text + "','" + txtlname.Text + "','" + gen + "','" + subject + "','" + (imgPath == null ? "" : imgPath) + "')";
             //MessageBox.Show(insert);
             //string insert = "insert into tblstudent(fname) values ('jhgjh')";
